@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PRUEBA</title>
+<link href="css/multiColumnTemplate.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/controller.js"></script>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script src="js/pace.js"></script>
+<link href="css/pace-theme-corner-indicator.css" rel="stylesheet" />
+</head>
+
+<body>
+<div class="container">
+  <header>
+    <div class="primary_header">
+      <h1 class="title">PRUEBA TECNICA</h1>
+    </div>
+    <nav class="secondary_header" id="menu">
+		<center>
+      		<ul>
+        		<li onClick="redirectAdd()">REGISTRAR<br>PERSONA</li>
+		        <li onClick="redirectCount()">LISTAR<br>CANTIDAD</li>
+        		<li onClick="redirectPerson()">LISTAR<br>PERSONAS</li>
+				<li onClick="redirectCountJson()">LISTAR<br>CANTIDAD<br>JSON</li>
+        		<li onClick="redirectPersonJson()">LISTAR<br>PERSONAS<br>JSON</li>
+				<li onClick="redirectCSV()">IMPORTAR<br>CSV</li>
+      		</ul>
+		</center>
+    </nav>
+  </header>
+	<center>
+		<br>
+  		<div class="input-group">
+  			<input id="name" type="text" class="form-control" placeholder="name" aria-describedby="basic-addon1">
+			<input id="lastname" type="text" class="form-control" placeholder="lastname" aria-describedby="basic-addon1">
+  		</div>
+		<br><br>
+		<div class="input-group">
+  			<input id="address" type="text" class="form-control" placeholder="address" aria-describedby="basic-addon1">
+			<input id="zipcode" type="text" class="form-control" placeholder="zipcode" aria-describedby="basic-addon1">
+  		</div>
+		<br><br>
+		<div class="input-group">
+  			<input id="phone" type="text" class="form-control" placeholder="phone" aria-describedby="basic-addon1">
+			<input id="color" type="text" class="form-control" placeholder="color" aria-describedby="basic-addon1">
+  		</div>
+		<br><br>
+		<button type="button" class="btn btn-danger" style="background-color: #007bff;" onClick="submit()">Register</button>
+		<br><br>
+	</center>
+  <footer class="secondary_header footer">
+    <div class="copyright">&copy;2017 - <strong>DAVID YEPES BUITRAGO</strong></div>
+  </footer>
+</div>
+</body>
+</html>

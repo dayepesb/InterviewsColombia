@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PRUEBA</title>
+	<script src="js/pace.js"></script>
+<link href="css/pace-theme-corner-indicator.css" rel="stylesheet" />
+<link href="css/multiColumnTemplate.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/controller.js"></script>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<link href="css/fileinput.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body onLoad="updateTablePeopleJson()">
+<div class="container">
+  <header>
+    <div class="primary_header">
+      <h1 class="title">PRUEBA TECNICA</h1>
+    </div>
+    <nav class="secondary_header" id="menu">
+      <ul>
+        <li onClick="redirectAdd()">REGISTRAR<br>PERSONA</li>
+        <li onClick="redirectCount()">LISTAR<br>CANTIDAD</li>
+        <li onClick="redirectPerson()">LISTAR<br>PERSONAS</li>
+		<li onClick="redirectCountJson()">LISTAR<br>CANTIDAD<br>JSON</li>
+        <li onClick="redirectPersonJson()">LISTAR<br>PERSONAS<br>JSON</li>
+        <li onClick="redirectCSV()">IMPORTAR<br>CSV</li>
+	  </ul>
+    </nav>
+  </header>
+	<br><br><br>
+	<center>
+	<div>
+		<!-- -->
+		<div class="container" id="container">x
+			<form name = "formulario" enctype="multipart/form-data">
+				<input type="file" name="archivos" id="archivos" class="btn btn-danger" style="background-color: #007bff;">
+			</form>
+		</div>
+		<!-- -->
+   </div>
+	</center>
+	<br><br><br><br><br>
+  <footer class="secondary_header footer">
+    <div class="copyright">&copy;2017 - <strong>DAVID YEPES BUITRAGO</strong></div>
+  </footer>
+</div>
+</body>
+</html>
